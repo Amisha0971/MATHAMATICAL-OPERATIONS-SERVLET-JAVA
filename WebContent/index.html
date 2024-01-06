@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+   <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color:pink; /* Set background color outside container */
+        }
+
+        .calculator-container {
+            text-align: center;
+            padding: 40px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 400px; /* Increase the width */
+            background-color:lightblue; /* Set background color inside container */
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input {
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 100%; /* Make the input fields take up the full width */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+         /* Added style for the bold button text */
+        input[type="submit"] {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator-container">
+        <h3><i><u>CALCULATOR</u></i></h3>
+        <form action="calculas" method="GET">
+            <input type="text" placeholder="Enter digit" name="num1"><br>
+            <input type="text" placeholder="Enter digit" name="num2"><br>
+            <input type="submit" name="operation" value="ADD/ SUBTRACT/ MULTIPY/ DIVIDE">
+        </form>
+    </div>
+</body>
+</html>
